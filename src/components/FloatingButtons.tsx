@@ -5,7 +5,7 @@ const FloatingButtons = () => {
     <div className="fixed bottom-6 left-0 right-0 z-50 px-4 flex justify-between pointer-events-none md:px-6">
       <a
         href="tel:+254729312480"
-        onClick={() => { if (typeof window.gtag_report_conversion === 'function') window.gtag_report_conversion('tel:+254729312480'); }}
+        onClick={() => { if (typeof (window as any).gtag_report_conversion === 'function') (window as any).gtag_report_conversion('tel:+254729312480'); }}
         className="pointer-events-auto w-14 h-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg animate-pulse-glow transition-transform hover:scale-110"
         aria-label="Call Now"
       >

@@ -12,7 +12,7 @@ const Footer = () => {
         </p>
         <a
           href="tel:+254729312480"
-          onClick={() => { if (typeof window.gtag_report_conversion === 'function') window.gtag_report_conversion('tel:+254729312480'); }}
+          onClick={() => { if (typeof (window as any).gtag_report_conversion === 'function') (window as any).gtag_report_conversion('tel:+254729312480'); }}
           className="inline-flex items-center gap-2 text-primary font-semibold"
         >
           <Phone className="w-4 h-4" />
