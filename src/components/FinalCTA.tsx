@@ -14,6 +14,7 @@ const FinalCTA = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="tel:+254729312480"
+            onClick={() => { if (typeof window.gtag_report_conversion === 'function') window.gtag_report_conversion('tel:+254729312480'); }}
             className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground font-heading text-lg font-semibold uppercase px-8 py-4 rounded-lg transition-transform hover:scale-105"
           >
             <Phone className="w-6 h-6" />
