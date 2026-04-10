@@ -24,6 +24,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           <a
             href="tel:+254729312480"
+            onClick={() => { if (typeof (window as any).gtag_report_conversion === 'function') (window as any).gtag_report_conversion('tel:+254729312480'); }}
             className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground font-heading text-lg md:text-xl font-semibold uppercase px-8 py-4 rounded-lg animate-pulse-glow transition-transform hover:scale-105"
           >
             <Phone className="w-6 h-6" />
