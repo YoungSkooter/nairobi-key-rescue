@@ -40,7 +40,7 @@ const LocationSection = () => {
             <div className="w-full md:flex-1 rounded-lg overflow-hidden h-64">
               <iframe
                 title="Key Hub Auto Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8166!2d36.7878!3d-1.3002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a4c6b6b6b6b%3A0x0!2sAdam&#39;s+Arcade%2C+Ngong+Rd%2C+Nairobi!5e0!3m2!1sen!2ske!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7904421932217!2d36.77660267464285!3d-1.3005923986870538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b73c644c289%3A0x19c9a6a36a1b84b9!2sKey%20Hub%20Auto!5e0!3m2!1sen!2ske!4v1775861414400!5m2!1sen!2ske"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
