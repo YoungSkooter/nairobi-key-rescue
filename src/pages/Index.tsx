@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import HowItWorks from "@/components/HowItWorks";
+import GallerySection from "@/components/GallerySection";
 import LocationSection from "@/components/LocationSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -14,6 +15,7 @@ const Index = () => {
       <ServicesSection />
       <WhyChooseUs />
       <HowItWorks />
+      <GallerySection />
       <LocationSection />
       <FinalCTA />
       <Footer />
