@@ -20,6 +20,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/car-key-replacement" element={<CarKeyReplacement />} />
+          <Route path="/key-fob-programming" element={<KeyFobProgramming />} />
+          <Route path="/emergency-locksmith" element={<EmergencyLocksmith />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
