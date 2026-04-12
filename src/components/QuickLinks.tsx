@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { Key, Cpu, ShieldAlert, Phone } from "lucide-react";
+import { Key, Copy, Cpu, ShieldAlert, Phone } from "lucide-react";
 
 const pages = [
   { to: "/car-key-replacement", icon: Key, title: "Car Key Replacement", desc: "All key types — cut & programmed on the spot" },
+  { to: "/car-key-duplication", icon: Copy, title: "Car Key Duplication", desc: "Fast, affordable spare key duplication" },
   { to: "/key-fob-programming", icon: Cpu, title: "Key Fob Programming", desc: "Transponder, smart key & remote programming" },
   { to: "/emergency-locksmith", icon: ShieldAlert, title: "Emergency Locksmith", desc: "24/7 emergency car lockout service" },
   { to: "/contact", icon: Phone, title: "Contact Us", desc: "Get in touch for a quick quote" },

@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import CarKeyReplacement from "./pages/CarKeyReplacement.tsx";
+import CarKeyDuplication from "./pages/CarKeyDuplication.tsx";
 import KeyFobProgramming from "./pages/KeyFobProgramming.tsx";
 import EmergencyLocksmith from "./pages/EmergencyLocksmith.tsx";
 import Contact from "./pages/Contact.tsx";
@@ -21,6 +22,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/car-key-replacement" element={<CarKeyReplacement />} />
+          <Route path="/car-key-duplication" element={<CarKeyDuplication />} />
           <Route path="/key-fob-programming" element={<KeyFobProgramming />} />
           <Route path="/emergency-locksmith" element={<EmergencyLocksmith />} />
           <Route path="/contact" element={<Contact />} />
