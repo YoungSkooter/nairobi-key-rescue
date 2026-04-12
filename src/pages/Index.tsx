@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 import GallerySection from "@/components/GallerySection";
 import LocationSection from "@/components/LocationSection";
 import FinalCTA from "@/components/FinalCTA";
+import QuickLinks from "@/components/QuickLinks";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
@@ -18,6 +19,7 @@ const Index = () => {
       <GallerySection />
       <LocationSection />
       <FinalCTA />
+      <QuickLinks />
       <Footer />
       <FloatingButtons />
     </main>
