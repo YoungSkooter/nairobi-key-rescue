@@ -1,31 +1,24 @@
-const steps = [
-  { number: "1", title: "Call or WhatsApp Us", description: "Reach us instantly on 0729 312 480" },
-  { number: "2", title: "Tell Us Your Location & Car Issue", description: "Share your details so we can prepare" },
-  { number: "3", title: "We Come to You Fast", description: "Our mobile team arrives in 20-30 minutes" },
-  { number: "4", title: "Get Back on the Road", description: "Problem solved on the spot" },
-];
+import { Phone, MessageCircle } from "lucide-react";
 
 const HowItWorks = () => {
   return (
-    <section className="py-16 md:py-24 bg-card">
-      <div className="container px-4">
-        <h2 className="font-heading text-3xl md:text-5xl font-bold text-center uppercase mb-12 text-foreground">
-          How It <span className="text-primary">Works</span>
+    <section className="py-16 md:py-24 bg-secondary">
+      <div className="container px-4 text-center max-w-2xl mx-auto">
+        <h2 className="font-heading text-3xl md:text-5xl font-bold uppercase mb-4 text-secondary-foreground">
+          Locked Out or Lost Your <span className="text-primary">Key?</span>
         </h2>
+        <p className="text-muted-foreground text-lg mb-8">
+          Don't stay stranded. Our mobile locksmith can reach you quickly and replace or program your car key on the spot.
+        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          {steps.map((step) => (
-            <div key={step.number} className="text-center">
-              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground font-heading text-2xl font-bold flex items-center justify-center mx-auto mb-4">
-                {step.number}
-              </div>
-              <h3 className="font-heading text-lg font-semibold uppercase mb-2 text-foreground">
-                {step.title}
-              </h3>
-              <p className="text-muted-foreground text-sm">{step.description}</p>
-            </div>
-          ))}
-        </div>
+        <a
+          href="tel:+254729312480"
+          onClick={() => { if (typeof (window as any).gtag_report_conversion === 'function') (window as any).gtag_report_conversion('tel:+254729312480'); }}
+          className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground font-heading text-lg font-semibold uppercase px-8 py-4 rounded-lg transition-transform hover:scale-105"
+        >
+          <Phone className="w-6 h-6" />
+          Call Now for Fast Help
+        </a>
       </div>
     </section>
   );
