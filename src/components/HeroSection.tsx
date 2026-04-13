@@ -1,5 +1,5 @@
 import heroBg from "@/assets/hero-banner.jpg";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, Star } from "lucide-react";
 
 const HeroSection = () => {
   return (
