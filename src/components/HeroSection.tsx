@@ -1,5 +1,5 @@
 import heroBg from "@/assets/hero-banner.jpg";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, Star } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -13,6 +13,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/95" />
       
       <div className="relative z-10 container text-center px-4 py-20">
+        <div className="flex items-center justify-center gap-1 mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+          ))}
+          <span className="ml-2 text-sm font-semibold text-foreground">5.0 on Google</span>
+        </div>
+
         <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-tight mb-4 text-foreground">
           Car Key Replacement Near You – <span className="text-primary">Fast Mobile Locksmith</span>
         </h1>
