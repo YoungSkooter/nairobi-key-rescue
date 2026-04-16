@@ -1,4 +1,5 @@
 import { ShieldCheck, Phone } from "lucide-react";
+import { trackCallClick } from "@/lib/tracking";
 
 const PricingSection = () => {
   return (
@@ -23,7 +24,7 @@ const PricingSection = () => {
         <div className="block">
           <a
             href="tel:+254729312480"
-            onClick={() => { if (typeof (window as any).gtag_report_conversion === 'function') (window as any).gtag_report_conversion('tel:+254729312480'); }}
+            onClick={trackCallClick}
             className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground font-heading text-lg font-semibold uppercase px-8 py-4 rounded-lg transition-transform hover:scale-105"
           >
             <Phone className="w-6 h-6" />

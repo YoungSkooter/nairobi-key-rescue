@@ -1,4 +1,5 @@
 import { Phone } from "lucide-react";
+import { trackCallClick, trackWhatsAppClick } from "@/lib/tracking";
 
 const WHATSAPP_URL = "https://wa.me/254729312480?text=Hi%2C%20I%20need%20help%20with%20my%20car%20key.%0A%0AMy%20car%20model%20is%3A%20___%0AMy%20location%20is%3A%20___%0AMy%20issue%20is%3A%20___";
 
@@ -13,7 +14,7 @@ const FloatingButtons = () => {
     <div className="fixed bottom-6 left-0 right-0 z-50 px-4 flex justify-between pointer-events-none md:px-6">
       <a
         href="tel:+254729312480"
-        onClick={() => { if (typeof (window as any).gtag_report_conversion === 'function') (window as any).gtag_report_conversion('tel:+254729312480'); }}
+        onClick={trackCallClick}
         className="pointer-events-auto w-14 h-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg animate-pulse-glow transition-transform hover:scale-110"
         aria-label="Call Now"
       >
@@ -24,6 +25,7 @@ const FloatingButtons = () => {
         href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={trackWhatsAppClick}
         className="pointer-events-auto w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg transition-transform hover:scale-110"
         aria-label="Chat on WhatsApp"
       >
