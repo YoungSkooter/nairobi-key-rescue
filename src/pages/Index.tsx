@@ -1,10 +1,11 @@
 import HeroSection from "@/components/HeroSection";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import ServicesSection from "@/components/ServicesSection";
+import IntentFilterSection from "@/components/IntentFilterSection";
 import HowItWorks from "@/components/HowItWorks";
+import PricingSection from "@/components/PricingSection";
 import LocationSection from "@/components/LocationSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
-import GallerySection from "@/components/GallerySection";
 import QuickLinks from "@/components/QuickLinks";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -13,11 +14,12 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      <WhyChooseUs />
-      <ServicesSection />
+      <IntentFilterSection />
       <HowItWorks />
-      <GallerySection />
+      <PricingSection />
       <LocationSection />
+      <TestimonialsSection />
+      <FAQSection />
       <FinalCTA />
       <QuickLinks />
       <Footer />
