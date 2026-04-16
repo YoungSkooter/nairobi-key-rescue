@@ -37,14 +37,20 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           <a
             href="tel:+254729312480"
-            onClick={trackCallClick}
+            onClick={() => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: "call_click" });
+}}
             className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground font-heading text-lg md:text-xl font-semibold uppercase px-8 py-4 rounded-lg animate-pulse-glow transition-transform hover:scale-105"
           >
             <Phone className="w-6 h-6" />
             Call Now for Immediate Help
           </a>
 
-          <WhatsAppButton href={WHATSAPP_URL} size="lg" onClick={trackWhatsAppClick}>
+          <WhatsAppButton href={WHATSAPP_URL} size="lg" onClick={() => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: "whatsapp_click" });
+}}>
             WhatsApp Now
           </WhatsAppButton>
         </div>
