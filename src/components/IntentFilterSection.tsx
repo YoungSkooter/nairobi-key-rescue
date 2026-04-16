@@ -1,4 +1,5 @@
 import { KeyRound, AlertTriangle, Copy, Wrench } from "lucide-react";
+import { trackWhatsAppClick } from "@/lib/tracking";
 
 const issues = [
   { icon: KeyRound, label: "Lost car key (no spare)" },
