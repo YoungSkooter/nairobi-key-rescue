@@ -1,6 +1,6 @@
-import { MapPin } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 
-const areas = ["Westlands", "Kilimani", "Lavington", "Kileleshwa"];
+const areas = ["Westlands", "Kilimani", "Lavington", "Kileleshwa", "Embakasi", "Kasarani", "Thika Road"];
 
 const LocationSection = () => {
   return (
@@ -9,12 +9,15 @@ const LocationSection = () => {
         <div className="flex items-center justify-center gap-3 mb-6">
           <MapPin className="w-8 h-8 text-primary" />
           <h2 className="font-heading text-3xl md:text-5xl font-bold uppercase text-foreground">
-            Areas We <span className="text-primary">Serve</span>
+            Serving Nairobi &amp; <span className="text-primary">Surrounding Areas</span>
           </h2>
         </div>
 
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-          Westlands, Kilimani, Lavington, Kileleshwa and surrounding Nairobi areas.
+        <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-4">
+          We operate across Nairobi including Westlands, Kilimani, Lavington, Embakasi, Kasarani, Thika Road, and nearby areas.
+        </p>
+        <p className="text-muted-foreground mb-8">
+          Call us to confirm availability in your exact location.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 mb-12">

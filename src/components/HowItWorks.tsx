@@ -1,24 +1,35 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Wrench } from "lucide-react";
+
+const steps = [
+  { icon: Phone, step: "1", title: "Call or WhatsApp us", description: "Tell us your car model, location, and issue." },
+  { icon: MapPin, step: "2", title: "We come to your location", description: "Our mobile technician arrives fast." },
+  { icon: Wrench, step: "3", title: "We cut & program your key on-site", description: "Done in under 60 minutes." },
+];
 
 const HowItWorks = () => {
   return (
-    <section className="py-16 md:py-24 bg-secondary">
-      <div className="container px-4 text-center max-w-2xl mx-auto">
-        <h2 className="font-heading text-3xl md:text-5xl font-bold uppercase mb-4 text-secondary-foreground">
-          Locked Out or Lost Your <span className="text-primary">Key?</span>
+    <section className="py-16 md:py-24 bg-background">
+      <div className="container px-4 text-center">
+        <h2 className="font-heading text-3xl md:text-5xl font-bold uppercase mb-12 text-foreground">
+          Get Back on the Road in <span className="text-primary">3 Simple Steps</span>
         </h2>
-        <p className="text-muted-foreground text-lg mb-8">
-          Don't stay stranded. Our mobile locksmith can reach you quickly and replace or program your car key on the spot.
-        </p>
 
-        <a
-          href="tel:+254729312480"
-          onClick={() => { if (typeof (window as any).gtag_report_conversion === 'function') (window as any).gtag_report_conversion('tel:+254729312480'); }}
-          className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground font-heading text-lg font-semibold uppercase px-8 py-4 rounded-lg transition-transform hover:scale-105"
-        >
-          <Phone className="w-6 h-6" />
-          Call Now for Fast Help
-        </a>
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-10">
+          {steps.map(({ icon: Icon, step, title, description }) => (
+            <div key={step} className="flex flex-col items-center gap-4">
+              <div className="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center">
+                <Icon className="w-7 h-7 text-primary" />
+              </div>
+              <span className="font-heading text-4xl font-bold text-primary/30">{step}</span>
+              <h3 className="font-heading text-xl font-semibold uppercase text-foreground">{title}</h3>
+              <p className="text-muted-foreground text-sm">{description}</p>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          No towing. No delays. We handle everything where you are.
+        </p>
       </div>
     </section>
   );
