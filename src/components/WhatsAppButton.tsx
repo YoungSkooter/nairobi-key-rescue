@@ -5,6 +5,7 @@ interface WhatsAppButtonProps {
   children: React.ReactNode;
   size?: "sm" | "lg";
   className?: string;
+  onClick?: () => void;
 }
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -13,12 +14,13 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const WhatsAppButton = ({ href, children, size = "lg", className }: WhatsAppButtonProps) => {
+const WhatsAppButton = ({ href, children, size = "lg", className, onClick }: WhatsAppButtonProps) => {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={onClick}
       className={cn(
         "inline-flex items-center justify-center gap-3 bg-[#25D366] text-white font-heading font-semibold uppercase rounded-lg transition-transform hover:scale-105 hover:bg-[#20bd5a]",
         size === "lg" ? "text-lg md:text-xl px-8 py-4" : "text-base px-6 py-3",
