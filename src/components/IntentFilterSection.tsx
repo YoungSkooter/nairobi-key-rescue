@@ -24,6 +24,7 @@ const IntentFilterSection = () => {
               key={label}
               href={`${WHATSAPP_BASE}${encodeURIComponent(`Hi, I need help.\n\nMy issue is: ${label}\nMy car model is: ___\nMy location is: ___`)}`}
               onClick={trackWhatsAppClick}
+              target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center gap-3 p-6 rounded-lg bg-muted border border-border hover:border-primary transition-colors group cursor-pointer"
             >
