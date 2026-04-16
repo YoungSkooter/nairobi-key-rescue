@@ -3,8 +3,14 @@ import keyUpgrade from "@/assets/key-upgrade.jpg";
 import shellKey from "@/assets/shell-key.jpg";
 import ecuRemap from "@/assets/ecu-remap.jpg";
 import keyProgramming from "@/assets/key-programming.jpg";
+import toyotaKey from "@/assets/toyota-key-upgrade.jpg";
+import mitsubishiKey from "@/assets/mitsubishi-key.jpg";
+import flipKey from "@/assets/flip-key-replacement.webp";
 
 const images = [
+  { src: toyotaKey, alt: "Toyota smart key replacement on site" },
+  { src: mitsubishiKey, alt: "Mitsubishi car key duplication" },
+  { src: flipKey, alt: "Flip key replacement service" },
   { src: ghostKeys, alt: "Ghost key security service" },
   { src: keyProgramming, alt: "Key programming services" },
   { src: keyUpgrade, alt: "Car key upgrade" },
@@ -20,7 +26,7 @@ const GallerySection = () => {
           Our <span className="text-primary">Work</span>
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {images.map((img) => (
             <div key={img.alt} className="rounded-lg overflow-hidden aspect-square">
               <img
