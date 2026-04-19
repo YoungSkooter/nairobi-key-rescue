@@ -1,4 +1,5 @@
-import heroBg from "@/assets/hero-banner.jpg";
+import heroBg from "@/assets/hero-banner.webp";
+import heroBgMobile from "@/assets/hero-banner-mobile.webp";
 import { Phone, Star, CheckCircle } from "lucide-react";
 import WhatsAppButton from "./WhatsAppButton";
 import { trackCallClick, trackWhatsAppClick } from "@/lib/tracking";
@@ -12,6 +13,10 @@ const HeroSection = () => {
     <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
       <img
         src={heroBg}
+        srcSet={`${heroBgMobile} 800w, ${heroBg} 1248w`}
+        sizes="(max-width: 800px) 100vw, 1248px"
+        width={1248}
+        height={832}
         alt="Car Key Replacement Near You – Fast Mobile Locksmith in Nairobi"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
